@@ -5,18 +5,88 @@
     display: flex;
     justify-content: space-between;
 }
+
 img {
     height: 100%;
-    }
-#main {
+}
+
+    #main {
     position: relative;
     display: flex;
     /*padding-left: 150px;*/
     padding-right: 150px;
     height: 325px;
-    /*margin-top: 500px;*/
+    /*margin-right: 20px;*/
     background-color: rgb(9, 9, 80);
     color: white;
     font-size: 20pt;
     text-align: left;
+}
+
+.button {
+    background-color: rgb(38, 198, 209);
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    text-align: left;
+    font-size: 19pt;
+    color: white;
+    position: relative;
+}
+
+.button:hover {
+    background-color:rebeccapurple;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    background-color: rgb(86, 86, 94);
+    z-index:1;
+    left: 35%;
+    top: 70%;
+    padding: 2px;
+    height: 65px;
+    width: 30%;
+    box-shadow: 0 5px 8px 0 rgba(231, 16, 16, 0.2), 0 7px 20px 0 rgb(224, 19, 19);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.modal-content{
+    background-color: rgb(114, 114, 153);
+    margin: 0% 0%;
+    height: 65px;
+    color: white;
+    }
+
+.closeBtn {
+    background-color: rgb(54, 54, 63);
+    position: relative;
+    top: 5px;
+    color: #ccc;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeX {
+    background-color: rgb(54, 54, 63);
+    color: #ccc;
+    float: right;
+    font-size: 20px;
+}
+
+.closeX:hover, .closeBtn:focus {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }
