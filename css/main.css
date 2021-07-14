@@ -1,0 +1,22 @@
+#header {
+    height: 100px;
+    width: auto;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    height: 100%;
+    }
+#main {
+    position: relative;
+    display: flex;
+    /*padding-left: 150px;*/
+    padding-right: 150px;
+    height: 325px;
+    /*margin-top: 500px;*/
+    background-color: rgb(9, 9, 80);
+    color: white;
+    font-size: 20pt;
+    text-align: left;
+}
