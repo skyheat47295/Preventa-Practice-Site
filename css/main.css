@@ -128,6 +128,13 @@ img {
     text-align: left;
 }
 
+footer {
+    border-top: 25px solid hsl(240, 72%, 18%);
+    border-bottom: 25px solid hsl(240, 72%, 18%);
+    width: 100%;
+    height: 100px;
+}    
+
 #rounded {
     border-radius: 0 100px 100px 0;
     margin-right: 20px;
@@ -150,13 +157,13 @@ img {
 
 .modal{
     display: none;
-    position: fixed;
+    position:relative;
     background-color: rgb(86, 86, 94);
     z-index:1;
     left: 35%;
     top: 70%;
     padding: 2px;
-    height: 65px;
+    height: 100px;
     width: 30%;
     box-shadow: 0 5px 8px 0 rgba(231, 16, 16, 0.2), 0 7px 20px 0 rgb(224, 19, 19);
     animation-name: modalopen;
@@ -181,10 +188,9 @@ img {
     border-radius: 4px;
 }
 
-.closeBtn:hover, .closeBtn:focus {
-    color: green;
-    text-decoration: none;
-    cursor: pointer;
+.modal:hover {
+    left: <script>Math.floor(Math.random() * 100) + 1 + '%';
+    top: Math.floor(Math.random() * 100) + 1 + '%';
 }
 
 .closeX {

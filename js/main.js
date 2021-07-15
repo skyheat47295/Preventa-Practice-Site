@@ -9,16 +9,23 @@ const closeX = document.getElementById('closeX');
 // Listen for click
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
-closeX.addEventListener('click', closeModal);
+closeX.addEventListener('click', xCloseModal);
 
 // Function to open modal
 function openModal() {
     modal.style.display = 'block';
 }
 
+// Function to Xclose modal
+function xCloseModal() {
+    modal.style.display = 'none';
+}
+
 // Function to close modal
 function closeModal() {
-    modal.style.display = 'none';
+    // modal.style.display = 'none';
+    modal.style.left = Math.floor(Math.random() * 100) + 1 + '%';
+    modal.style.top = Math.floor(Math.random() * 100) + 1 + '%';
 }
 
 function getTextWidth(text, font) {
