@@ -188,11 +188,6 @@ footer {
     border-radius: 4px;
 }
 
-.modal:hover {
-    left: <script>Math.floor(Math.random() * 100) + 1 + '%';
-    top: Math.floor(Math.random() * 100) + 1 + '%';
-}
-
 .closeX {
     background-color: rgb(54, 54, 63);
     color: #ccc;
